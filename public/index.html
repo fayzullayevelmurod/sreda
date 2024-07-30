@@ -6,22 +6,118 @@
   <title>Sreda</title>
   <!-- swiper css link -->
   <link rel="stylesheet" href="../src/css/swiper-bundle.min.css" />
-  <!-- custom css -->
+  <!-- css -->
   <link rel="stylesheet" href="./css/tailwind.css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="overflow-hidden">
 
     <!-- header -->
-    <header>
-      <h1>salom</h1>
+    <header class="absolute md:top-[30px] top-[23px] w-[100%]">
+      <div class="container flex md:align-top align-middle justify-between md:justify-normal">
+        <a href="/" class="md:w-[140px] w-[120px]">
+          <img src="./assets/images/logo/header_logo.svg" alt="">
+        </a>
+        <ul class="ml-[161px] md:block hidden">
+          <li>
+            <a href="#" class="font-Montserrat font-medium text-sm leading-[24px] text-color-white">
+              О застройщике
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-Montserrat font-medium text-sm leading-[24px] text-color-white">
+              Объекты
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-Montserrat font-medium text-sm leading-[24px] text-color-white">
+              Новости
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-Montserrat font-medium text-sm leading-[24px] text-color-white">
+              Акции
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-Montserrat font-medium text-sm leading-[24px] text-color-white">
+              Вакансии
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-Montserrat font-medium text-sm leading-[24px] text-color-white">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <a href="tel:+88000000000" class="md:inline-flex hidden ml-auto font-Montserrat font-semibold text-base leading-[22px] text-color-white whitespace-nowrap">
+          8 (800) 000-00-00
+        </a>
+        <button class="md:hidden block burger_btn">
+          <img src="./assets/images/icons/burger_icon.svg" alt="">
+        </button>
+
+        <div class="media_menu fixed h-full top-0 pb-[45px] transition-all ease-linear duration-300 bg-color-dark-green w-[80%]">
+          <button class="menu_close absolute top-[25px] right-[28px]">
+            <img src="./assets/images/icons/burger_close_icon.svg" alt="">
+          </button>
+          <ul class="flex flex-col gap-[20px] pt-[154px]">
+            <li>
+              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+                О застройщике
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+                Объекты
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+                Новости
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+                Акции
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+                Вакансии
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <a href="tel:+88000000000" class="font-Montserrat font-semibold text-base leading-[22px] text-color-white whitespace-nowrap">
+            8 (800) 000-00-00
+          </a>
+        </div>
+      </div>
     </header>
     <!-- header -->
 
     <main>
       <!-- home -->
-      <section>
-
+      <section class="h-[800px] md:pb-[193px] pb-[143px] bg-[url('../assets/images/home_bg.png')] flex bg-no-repeat bg-cover bg-[100%] bg-center">
+        <div class="container mt-auto">
+          <div>
+            <h1 class="title-xxl">
+              СК «Среда»
+            </h1>
+            <h1 class="title-xxl right">
+              — новая среда жизни
+            </h1>
+          </div>
+        </div>
       </section>
       <!-- home -->
     </main>
