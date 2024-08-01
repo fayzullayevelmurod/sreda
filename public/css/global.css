@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Argentum Sans VF ExtraLight";
+  font-family: "Argentum Sans VF";
   src: url("../fonts/argentum-sans/ArgentumSans-ExtraLight.otf") format('otf');
   src: url("../fonts/argentum-sans/ArgentumSans-ExtraLight.ttf") format('ttf');
   font-weight: 200;

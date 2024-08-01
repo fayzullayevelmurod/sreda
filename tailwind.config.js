@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         Unbounded: ['"Unbounded"'],
         Montserrat: ['"Montserrat"'],
+        Argentum: ['"Argentum Sans VF"']
       },
       colors: {
         "color-white": "#FFFFFF",
@@ -16,7 +17,8 @@ module.exports = {
         "color-line": "#0000004D",
         "color-light-line": "#FEFCF63D",
         "color-text": "#FFFFFFB2",
-        "grey-bg": '#F4F5F5'
+        "grey-bg": '#F4F5F5',
+        "grey-text": '#363636B2'
       },
     },
   },
