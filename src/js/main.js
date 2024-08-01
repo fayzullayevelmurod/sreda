@@ -12,6 +12,27 @@ menu_close.addEventListener('click', () => {
   media_menu.classList.remove('right-0');
 })
 
+let workbtn = document.querySelector('.work-btn');
+let workbtntwo = document.querySelector('.work-btn-two');
+let contentone = document.querySelector('.content-one');
+let contenttwo = document.querySelector('.content-two');
+let iconone = document.querySelector('.icon');
+let icontwo = document.querySelector('.icon-two');
+
+workbtn.addEventListener('click', () => {
+  contentone.classList.remove('hidden');
+  contenttwo.classList.add('hidden')
+  iconone.classList.add('rotate-[-90deg]')
+  icontwo.classList.remove('rotate-[-90deg]')
+})
+
+workbtntwo.addEventListener('click', () => {
+  contenttwo.classList.remove('hidden');
+  contentone.classList.add('hidden');
+  iconone.classList.remove('rotate-[-90deg]')
+  icontwo.classList.add('rotate-[-90deg]')
+})
+
 
 let swiper = new Swiper(".newsSwiper", {
   spaceBetween: 31,
