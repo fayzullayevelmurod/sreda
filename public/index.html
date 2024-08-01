@@ -19,7 +19,7 @@
     <!-- header -->
     <header class="absolute md:top-[30px] top-[23px] w-[100%]">
       <div class="container flex md:align-top align-middle justify-between md:justify-normal">
-        <a href="/" class="md:w-[140px] w-[120px]">
+        <a href="/" class="md:w-[140px] w-[120px] h-fit">
           <img src="./assets/images/logo/header_logo.svg" alt="">
         </a>
         <ul class="ml-[161px] md:block hidden">
@@ -54,45 +54,45 @@
             </a>
           </li>
         </ul>
-        <a href="tel:+88000000000" class="md:inline-flex hidden ml-auto font-Montserrat font-semibold text-base leading-[22px] text-color-white whitespace-nowrap">
+        <a href="tel:+88000000000" class="md:inline-flex hidden ml-auto font-Montserrat font-semibold text-base leading-[22px] text-color-white whitespace-nowrap h-fit">
           8 (800) 000-00-00
         </a>
         <button class="md:hidden block burger_btn">
           <img src="./assets/images/icons/burger_icon.svg" alt="">
         </button>
 
-        <div class="media_menu fixed h-full top-0 pb-[45px] transition-all ease-linear duration-300 bg-color-dark-green w-[80%]">
+        <div class="media_menu -right-full flex flex-col h-dvh justify-between ps-[62px] pe-5 fixed top-0 pb-[45px] transition-all ease-linear duration-300 bg-color-dark-green w-[80%] gap-2">
           <button class="menu_close absolute top-[25px] right-[28px]">
             <img src="./assets/images/icons/burger_close_icon.svg" alt="">
           </button>
-          <ul class="flex flex-col gap-[20px] pt-[154px]">
+          <ul class="flex flex-col gap-[40px] pt-[154px]">
             <li>
-              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+              <a href="#" class="font-Montserrat font-medium text-2xl leading-[42px] text-color-white">
                 О застройщике
               </a>
             </li>
             <li>
-              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+              <a href="#" class="font-Montserrat font-medium text-2xl leading-[42px] text-color-white">
                 Объекты
               </a>
             </li>
             <li>
-              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+              <a href="#" class="font-Montserrat font-medium text-2xl leading-[42px] text-color-white">
                 Новости
               </a>
             </li>
             <li>
-              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+              <a href="#" class="font-Montserrat font-medium text-2xl leading-[42px] text-color-white">
                 Акции
               </a>
             </li>
             <li>
-              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+              <a href="#" class="font-Montserrat font-medium text-2xl leading-[42px] text-color-white">
                 Вакансии
               </a>
             </li>
             <li>
-              <a href="#" class="font-Montserrat font-medium text-xl leading-[24px] text-color-white">
+              <a href="#" class="font-Montserrat font-medium text-2xl leading-[42px] text-color-white">
                 Контакты
               </a>
             </li>
@@ -107,7 +107,7 @@
 
     <main>
       <!-- home -->
-      <section class="h-[800px] md:pb-[193px] pb-[143px] bg-[url('../assets/images/home_bg.png')] flex bg-no-repeat bg-cover bg-[100%] bg-center">
+      <section class="h-[800px] md:pb-[193px] pb-[143px] bg-[url('../assets/images/home_bg.png')] flex bg-no-repeat bg-cover bg-center">
         <div class="container mt-auto">
           <div>
             <h1 class="title-xxl">
@@ -123,8 +123,75 @@
     </main>
 
     <!-- footer -->
-    <footer>
-
+    <footer class="pt-[50px] pb-[50px] md:pb-[68px] md:pt-[95px] bg-color-dark-green">
+      <div class="container flex justify-between gap-[32px] flex-col md:flex-row">
+        <a href="/" class="md:w-[140px] w-[120px] h-fit flex-shrink-0">
+          <img src="./assets/images/logo/header_logo.svg" alt="">
+        </a>
+        <div class="flex gap-[32px] md:gap-[70px] flex-col md:flex-row">
+          <ul>
+            <h6 class="font-light text-sm leading-[33px] text-white font-Unbounded mb-[10px]">
+              Покупателям
+            </h6>
+            <li>
+              <a href="#" class="font-normal text-sm leading-[33px] text-color-text font-Montserrat">
+                Акции
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-normal text-sm leading-[33px] text-color-text font-Montserrat">
+                Новости и статьи
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-normal text-sm leading-[33px] text-color-text font-Montserrat">
+                Реквизиты и документы
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-normal text-sm leading-[33px] text-color-text font-Montserrat">
+                Ипотека
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-normal text-sm leading-[33px] text-color-text font-Montserrat">
+                Политика конфиденциальности
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <h6 class="font-light text-sm leading-[33px] text-white font-Unbounded mb-[10px]">
+              Недвижимость
+            </h6>
+            <li>
+              <a href="#" class="font-normal text-sm leading-[33px] text-color-text font-Montserrat">
+                Квартиры
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-normal text-sm leading-[33px] text-color-text font-Montserrat">
+                Коммерческие помещения
+              </a>
+            </li>
+          </ul>
+          <ul class="md:pl-[30px] pl-0">
+            <h6 class="font-light text-sm leading-[33px] text-white font-Unbounded mb-[10px]">
+              Компания
+            </h6>
+            <li>
+              <a href="#" class="font-normal text-sm leading-[33px] text-color-text font-Montserrat">
+                О компании
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-normal text-sm leading-[33px] text-color-text font-Montserrat
+              ">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
     <!-- footer -->
   </div>

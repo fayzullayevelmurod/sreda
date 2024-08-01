@@ -570,12 +570,6 @@ video {
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 992px;
-  }
-}
-
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -614,16 +608,12 @@ video {
   position: sticky;
 }
 
-.top-\[23px\] {
-  top: 23px;
+.-right-full {
+  right: -100%;
 }
 
-.top-\[25px\] {
-  top: 25px;
-}
-
-.right-\[\] {
-  right: ;
+.right-0 {
+  right: 0px;
 }
 
 .right-\[28px\] {
@@ -632,6 +622,18 @@ video {
 
 .top-0 {
   top: 0px;
+}
+
+.top-\[23px\] {
+  top: 23px;
+}
+
+.top-\[25px\] {
+  top: 25px;
+}
+
+.mb-\[10px\] {
+  margin-bottom: 10px;
 }
 
 .ml-\[161px\] {
@@ -644,14 +646,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.ml-\[\] {
-  margin-left: ;
-}
-
-.ml-\[82px\] {
-  margin-left: 82px;
 }
 
 .block {
@@ -674,8 +668,13 @@ video {
   height: 800px;
 }
 
-.h-full {
-  height: 100%;
+.h-dvh {
+  height: 100dvh;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .w-\[100\%\] {
@@ -686,16 +685,12 @@ video {
   width: 120px;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
-}
-
 .w-\[80\%\] {
   width: 80%;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .transform {
@@ -706,6 +701,10 @@ video {
   resize: both;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -714,12 +713,16 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[10px\] {
-  gap: 10px;
+.gap-2 {
+  gap: 0.5rem;
 }
 
-.gap-\[20px\] {
-  gap: 20px;
+.gap-\[32px\] {
+  gap: 32px;
+}
+
+.gap-\[40px\] {
+  gap: 40px;
 }
 
 .overflow-hidden {
@@ -743,10 +746,6 @@ video {
   background-size: cover;
 }
 
-.bg-\[100\%\] {
-  background-position: 100%;
-}
-
 .bg-center {
   background-position: center;
 }
@@ -759,20 +758,32 @@ video {
   padding-bottom: 143px;
 }
 
-.pt-0 {
-  padding-top: 0px;
+.pb-\[45px\] {
+  padding-bottom: 45px;
+}
+
+.pb-\[50px\] {
+  padding-bottom: 50px;
+}
+
+.pe-5 {
+  padding-inline-end: 1.25rem;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.ps-\[62px\] {
+  padding-inline-start: 62px;
 }
 
 .pt-\[154px\] {
   padding-top: 154px;
 }
 
-.pt-\[15\] {
-  padding-top: 15;
-}
-
-.pb-\[45px\] {
-  padding-bottom: 45px;
+.pt-\[50px\] {
+  padding-top: 50px;
 }
 
 .align-middle {
@@ -781,6 +792,15 @@ video {
 
 .font-Montserrat {
   font-family: "Montserrat";
+}
+
+.font-Unbounded {
+  font-family: "Unbounded";
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-base {
@@ -793,18 +813,16 @@ video {
   line-height: 1.25rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .font-semibold {
@@ -819,7 +837,24 @@ video {
   line-height: 24px;
 }
 
+.leading-\[33px\] {
+  line-height: 33px;
+}
+
+.leading-\[42px\] {
+  line-height: 42px;
+}
+
+.text-color-text {
+  color: #FFFFFFB2;
+}
+
 .text-color-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -922,14 +957,6 @@ body {
   color: #ffffff;
 }
 
-.media_menu {
-  right: -100%;
-}
-
-.media_menu.active {
-  right: 0;
-}
-
 @media only screen and (max-width: 1300px) {
   .container {
     max-width: 100%;
@@ -954,12 +981,8 @@ body {
     display: block;
   }
 
-  .md\:inline-block {
-    display: inline-block;
-  }
-
-  .md\:inline {
-    display: inline;
+  .md\:flex {
+    display: flex;
   }
 
   .md\:inline-flex {
@@ -974,12 +997,36 @@ body {
     width: 140px;
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:justify-normal {
     justify-content: normal;
   }
 
+  .md\:gap-\[70px\] {
+    gap: 70px;
+  }
+
   .md\:pb-\[193px\] {
     padding-bottom: 193px;
+  }
+
+  .md\:pb-\[68px\] {
+    padding-bottom: 68px;
+  }
+
+  .md\:pl-\[30px\] {
+    padding-left: 30px;
+  }
+
+  .md\:pt-\[95px\] {
+    padding-top: 95px;
   }
 
   .md\:align-top {
