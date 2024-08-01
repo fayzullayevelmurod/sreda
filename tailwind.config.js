@@ -16,7 +16,7 @@ module.exports = {
         "color-line": "#0000004D",
         "color-light-line": "#FEFCF63D",
         "color-text": "#FFFFFFB2",
-        gray: "#3D3D3D",
+        "grey-bg": '#F4F5F5'
       },
     },
   },
