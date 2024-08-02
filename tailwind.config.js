@@ -19,7 +19,8 @@ module.exports = {
         "color-text": "#FFFFFFB2",
         "grey-bg": '#F4F5F5',
         "grey-text": '#363636B2',
-        "circle-bg": '#FFFFFF4A'
+        "circle-bg": '#FFFFFF4A',
+        "line-grey": '#0000001C'
       },
     },
   },
